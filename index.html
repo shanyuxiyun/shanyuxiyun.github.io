@@ -99,11 +99,21 @@
 <p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
+<h3 id="常用命令集合"><a href="#常用命令集合" class="headerlink" title="常用命令集合"></a>常用命令集合</h3><p><strong>0x01 新建一个网站</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init [folder]</span><br></pre></td></tr></table></figure></p>
+<p>如果没有设置 folder ，Hexo 默认在目前的文件夹建立网站</p>
+<p><strong>0x02 新建一篇文章</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure></p>
+<p>新建一篇文章。如果没有设置 layout 的话，默认使用 _config.yml 中的 default_layout 参数代替。<br>如果标题包含空格的话，请使用引号括起来</p>
+<p><strong>0x03 生成静态文件</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo generate</span><br></pre></td></tr></table></figure></p>
+<p>  -d, –deploy     文件生成后立即部署网站<br>  -w, –watch     监视文件变动</p>
+<h3 id="使用中遇到的问题"><a href="#使用中遇到的问题" class="headerlink" title="使用中遇到的问题"></a>使用中遇到的问题</h3><p><strong>1. Error: bash: /dev/tty: No such device or address</strong></p>
+<pre><code>配置_config.xml属性时候，冒号后面必须要有一个空格
+</code></pre><p><strong>2. git部署没有错误提示，但是github访问却没有更新内容</strong></p>
+<pre><code>配置**_config.xml**deploy仓库的时候，仓库名必须为【your_user_name.github.io】，固定写法
+</code></pre>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/05/hello-world/" data-id="cip22njp70000fgxn5amr0tlt" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/05/hello-world/" data-id="cip22rfol0000y4xnlvaowc5z" class="article-share-link">Share</a>
       
       
     </footer>
